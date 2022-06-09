@@ -1,0 +1,52 @@
+@mixin childspace-x($space) {
+	& > * + * {
+		margin-left: $space;
+	}
+}
+
+@mixin childspace-y($space) {
+	& > * + * {
+		margin-top: $space;
+	}
+}
+
+@mixin bp($bp) {
+	@media (min-width: $bp) {
+		@content
+	}
+}
+
+@mixin sm {
+	@include bp(547px) {
+		@content
+	}
+}
+
+@mixin md {
+	@include bp(768px) {
+		@content
+	}
+}
+
+@mixin lg {
+	@include bp(967px) {
+		@content
+	}
+}
+
+@mixin xl {
+	@include bp(1176px) {
+		@content
+	}
+}
+
+@mixin xxl {
+	@include bp(1249px) {
+		@content
+	}
+}
+
+@mixin items-center {
+	display: flex;
+	align-items: center;
+}

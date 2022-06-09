@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Engage | Grow with us!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/akar-icons-fonts@latest/src/css/akar-icons.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="root">
+      <!-- Navbar -->
+      <header class="navbar">
+        <!-- Container for navbar, to set max width -->
+        <div class="container nav">
+          <!-- Logo & Nav links-->
+          <div class="nav-left-side">
+            <!-- Logo & Announcement cta btn -->
+            <div class="announcement-wrapper">
+              <!-- Logo -->
+              <a class="nav-logo" href="#hero">
+                <svg width="171" height="207" viewBox="0 0 171 207" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 102.829C0 86.9073 12.9073 74 28.8293 74H83.7491C94.7947 74 103.749 82.9543 103.749 94V111.659C103.749 122.704 94.7948 131.659 83.7491 131.659H28.8293C12.9073 131.659 0 118.751 0 102.829Z" fill="#B3B3B3"/>
+                  <path d="M0 12.6222C0 5.65116 5.65116 0 12.6222 0H131.842C153.137 0 170.4 17.2631 170.4 38.5583C170.4 50.0577 161.078 59.3797 149.579 59.3797H21.9871C9.84397 59.3797 0 49.5358 0 37.3927V12.6222Z" fill="#B3B3B3"/>
+                  <path d="M0 169.025C0 156.882 9.84396 147.038 21.9871 147.038H149.579C161.078 147.038 170.4 156.36 170.4 167.86C170.4 189.155 153.137 206.418 131.842 206.418H12.6222C5.65118 206.418 0 200.767 0 193.796V169.025Z" fill="#B3B3B3"/>
+                </svg>
+                <span>engage</span>
+              </a>
+
+              <!-- Announcement -->
+              <a class="announcement" href="#site-audit">
+                <span>
+                  Try out our site audit service for free
+                </span>         
+                <i class="ai-chevron-right"></i>
+              </a>
+            </div>
+            
+            <!-- Nav links (Desktop) -->
+          	<nav class="nav-links">
+              <a class="nav-link" href="#">Our Services</a>
+              <a class="nav-link" href="#">About Us</a> 
+            </nav>
+          </div>
+
+          <!-- The gradients kind of light in the bg -->
+          <div class="lighting"></div>
+
+          <!-- Contact CTA Btn -->
+          <a href="#contact">
+            <button class="nav-cta-btn">
+              <span>Let's talk</span>
+            </button>
+          </a>
+
+          <!-- Checkbox for the mobile navbar, perfect for a no js navbar implementation -->
+          <input type="checkbox" id="nav-checkbox" />
+
+          <!-- Bars -->
+          <label for="nav-checkbox" class="bars">
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </label>
+
+          <!-- Backdrop for nav links (Mobile) -->
+          <label for="nav-checkbox" class="nav-backdrop"></label>
+
+          <!-- Nav links (Mobile) -->
+          <nav class="mobile-nav-links">
+
+            <!-- Bars inside nav, added `mobile` class to add animation -->
+            <label for="nav-checkbox" class="bars mobile">
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </label>
+
+            <!-- Links -->
+            <a class="nav-link" href="#">Our Services</a>
+            <a class="nav-link" href="#">About Us</a> 
+
+            <!-- Contact CTA Btn -->
+            <a href="#contact">
+              <button class="mobile-nav-cta-btn">
+                <span>Let's talk</span>
+              </button>
+            </a>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Hero -->
+      <div class="container">
+        <div class="hero" id="hero">
+        <div>
+         <h1 class="hero-heading">Showcase better website for your business</h1>
+          <h2 class="hero-subheading">We build elegant responsive websites, landing pages, web applications, and software solutions to help your business grow and enhance its digital presence.
+          </h2>
+
+          <div class="hero-cta-btns">
+            <a href="#contact">
+              <button class="hero-btn get">
+                <span>Get in touch</span>
+              </button>
+            </a>
+            <a href="#site-audit">
+              <button class="hero-btn try">
+                <span>Check for any flaws in your website</span>
+                <i class="ai-chevron-right"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="hero-img-wrapper">
+            <img src="./img/hero-mobile.svg" alt="Engage Asset" class="hero-img" />
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
