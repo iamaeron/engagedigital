@@ -1,46 +1,48 @@
-*, *::before, *::after {
-	box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-	font-family: Inter, sans-serif;
-	line-height: 1.4;
-	-webkit-font-smoothing: antialiased;
+  font-family: Inter, sans-serif;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
 }
 
 button {
-	user-select: none;
-	cursor: pointer;
-	background: transparent;
+  user-select: none;
+  cursor: pointer;
+  background: transparent;
 }
 
 input {
-	outline: none;
+  outline: none;
 }
 
 input,
 button {
-	font-family: inherit;
-	font-size: 100%;
-	border: none;
+  font-family: inherit;
+  font-size: 100%;
+  border: none;
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 h1,
@@ -49,15 +51,15 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: inherit;
-	font-size: 100%;
+  font-weight: inherit;
+  font-size: 100%;
 }
 
 // This is not a reset
 .root {
-	background-color: $bg;
-	min-height: 100vh;
-	height: auto;
-	background-image: url('../img/grid.svg');
-	color: $text;
+  background-color: $bg;
+  min-height: 100vh;
+  height: auto;
+  background-image: url("../img/grid.svg");
+  color: $text;
 }

@@ -1,111 +1,111 @@
 .hero {
-	padding: 3rem 0;
-	display: flex;
-	justify-content: space-between;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
 
-	.hero-heading {
-		font-size: 2rem;
-		font-weight: 700;
-		max-width: 16ch;
+  .hero-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    max-width: 16ch;
 
-		@include sm {
-			font-size: 2.5rem;
-			max-width: 20ch
-		}
+    @include sm {
+      font-size: 2.5rem;
+      max-width: 20ch;
+    }
 
-		@include md {
-			font-size: 2.75rem;
-		}
+    @include md {
+      font-size: 2.75rem;
+    }
 
-		@include xl {
-			font-size: 3rem;
-		}
-	}
+    @include xl {
+      font-size: 3rem;
+    }
+  }
 
-	.hero-subheading {
-		font-size: 1rem;
-		color: darken($text, 20%);
-		margin-top: 1rem;
-		margin-bottom: 3rem;
-		max-width: 35ch;
+  .hero-subheading {
+    font-size: 1rem;
+    color: darken($text, 20%);
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    max-width: 35ch;
 
-		@include sm {
-			font-size: 1.125rem;
-			max-width: 40ch;
-		}
+    @include sm {
+      font-size: 1.125rem;
+      max-width: 40ch;
+    }
 
-		@include md {
-			max-width: 50ch;
-		}
-	}
+    @include md {
+      max-width: 50ch;
+    }
+  }
 
-	.hero-cta-btns {
-		@include childspace-y(2rem);
-		display: flex;
-		flex-direction: column;
+  .hero-cta-btns {
+    @include childspace-y(2rem);
+    display: flex;
+    flex-direction: column;
 
-		.hero-btn {
-			@include items-center;
-			user-select: none;
-			width: max-content;
-			border-radius: 0.5rem;
-			font-weight: 500;
-			font-size: 0.875rem;
+    .hero-btn {
+      @include items-center;
+      user-select: none;
+      width: max-content;
+      border-radius: 0.5rem;
+      font-weight: 500;
+      font-size: 0.875rem;
 
-			&.get {
-				padding: 1.125rem 1.25rem;
-				background: lighten($bg, 10%);
-				color: darken(#fff, 10%);
-				
-				&:hover {
-					background: lighten($bg, 15%);
-				}
-			}
+      &.get {
+        padding: 1.125rem 1.25rem;
+        background: lighten($bg, 10%);
+        color: darken(#fff, 10%);
 
-			&.try {
-				@include childspace-x(0.75rem);
-				color: $primary;
-				
-				&:hover {
-					i {
-						transform: translateX(8px);
-					}
-				}
+        &:hover {
+          background: lighten($bg, 15%);
+        }
+      }
 
-				i {
-					transition: 100ms;
-				}
-			}
-		}
+      &.try {
+        @include childspace-x(0.75rem);
+        color: $primary;
 
-		@include sm {
-			@include childspace-y(0);
-			@include childspace-x(2rem);
-			flex-direction: row;
-			align-items: center;
-		}
-	}
+        &:hover {
+          i {
+            transform: translateX(8px);
+          }
+        }
 
-	.hero-img-wrapper {
-		display: none;
-		border: 1px solid #23314c; 
-		border-radius: 20px;
-		user-select: none;
-		box-shadow: 0 50px 80px 10px rgba(#fff, 0.1);
+        i {
+          transition: 100ms;
+        }
+      }
+    }
 
-		.hero-img {
-			border-radius: 20px;
-			background-color: #182235;
-			height: 100%;
-		}
+    @include sm {
+      @include childspace-y(0);
+      @include childspace-x(2rem);
+      flex-direction: row;
+      align-items: center;
+    }
+  }
 
-		@include lg {
-			display: block;
-			height: 400px
-		}
+  .hero-img-wrapper {
+    display: none;
+    border: 1px solid #23314c;
+    border-radius: 20px;
+    user-select: none;
+    box-shadow: 0 50px 80px 10px rgba(#fff, 0.1);
 
-		@include xl {
-			height: 600px;
-		}
-	}
+    .hero-img {
+      border-radius: 20px;
+      background-color: #182235;
+      height: 100%;
+    }
+
+    @include lg {
+      display: block;
+      height: 400px;
+    }
+
+    @include xl {
+      height: 600px;
+    }
+  }
 }

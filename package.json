@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "npx live-server . --no-browser --port=3000",
-    "format": "npx prettier ./**/*.{html,scss} --write",
+    "format": "npx prettier ./**/**/*.{html,scss} --write",
     "sass": "npx sass scss:css --no-source-map",
     "sass-w": "npx sass scss:css --no-source-map --watch",
     "dev-sass": "npx concurrently \"npm:dev\" \"npm:sass-w\""  
